@@ -101,7 +101,21 @@ Raspberry Pi 40-pin Header
 
 ---
 
-### 3. LED Output Circuits (4x)
+### 3. Power Indicator LED
+
+| RefDes | Part | Value | Package | Notes |
+|--------|------|-------|---------|-------|
+| R_PWR_LED | Resistor | 330Ω | 0603 | Current limit for power indicator LED |
+| LED_PWR | LED | Standard 3mm/5mm LED | - | Sensor power rail indicator (on-board, not user-installed) |
+
+**Connections:**
+- SENS_3V3_SW → R_PWR_LED (330Ω) → LED_PWR anode
+- LED_PWR cathode → GND
+- **Note:** Indicates when sensor power rail (SENS_3V3_SW) is ON. LED is on-board component, not user-installed.
+
+---
+
+### 4. LED Output Circuits (4x)
 
 | RefDes | Part | Value | Package | Notes |
 |--------|------|-------|---------|-------|
@@ -119,7 +133,7 @@ Raspberry Pi 40-pin Header
 
 ---
 
-### 4. Button Input Circuits (2x)
+### 5. Button Input Circuits (2x)
 
 **Connections:**
 - BTN1: GPIO23 (BCM23, pin 16) → J5 pin 1 (use internal pull-up)
@@ -129,7 +143,7 @@ Raspberry Pi 40-pin Header
 
 ---
 
-### 5. ADC Input Connectors (4x)
+### 6. ADC Input Connectors (4x)
 
 **Connections:**
 - J7 (ADC0): Pin 1 → ADS1015 AIN0, Pin 2 → GND
@@ -141,7 +155,7 @@ Raspberry Pi 40-pin Header
 
 ---
 
-### 6. GPIO Bank Connector (1x)
+### 7. GPIO Bank Connector (1x)
 
 **Connections:**
 - J11 pin 1 → GPIO5 (BCM5, pin 29)
@@ -152,7 +166,7 @@ Raspberry Pi 40-pin Header
 
 ---
 
-### 7. I2C Port Connectors (2x)
+### 8. I2C Port Connectors (2x)
 
 **Connections:**
 - J12 (I2C_PORT_A):
@@ -169,7 +183,7 @@ Raspberry Pi 40-pin Header
 
 ---
 
-### 8. UART Connector (1x)
+### 9. UART Connector (1x)
 
 **Connections:**
 - J14 (UART0):
@@ -179,7 +193,7 @@ Raspberry Pi 40-pin Header
 
 ---
 
-### 9. SPI Connector (1x)
+### 10. SPI Connector (1x)
 
 **Connections:**
 - J15 (SPI0):
@@ -266,7 +280,7 @@ Raspberry Pi 40-pin Header
 | Category | Count | Components |
 |----------|-------|------------|
 | ICs | 2 | ADS1015IDGST, SY6280AAC |
-| Resistors | 7 | 4x 220Ω (LEDs), 34.0kΩ (current limit), 100kΩ (pull-up), 100Ω (series) |
+| Resistors | 8 | 1x 330Ω (power LED), 4x 220Ω (LEDs), 34.0kΩ (current limit), 100kΩ (pull-up), 100Ω (series) |
 | Capacitors | 3 | 2x 10µF (load switch), 1x 0.1µF (ADC) |
 | Connectors - 2-pin | 10 | J1-J4 (LEDs), J5-J6 (Buttons), J7-J10 (ADC) - LCSC C22436166 |
 | Connectors - 3-pin | 1 | J14 (UART) - LCSC C161691 |

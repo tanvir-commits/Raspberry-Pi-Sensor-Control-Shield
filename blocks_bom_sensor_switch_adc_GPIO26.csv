@@ -12,3 +12,5 @@ LED_OUTPUTS,R_LED1,1,LED current limit resistor,220Ω,,,,0603,"LED1_SIG, J1_PIN1
 LED_OUTPUTS,R_LED2,1,LED current limit resistor,220Ω,,,,0603,"LED2_SIG, J2_PIN1",PROD,Current limit for LED2 (GPIO17).
 LED_OUTPUTS,R_LED3,1,LED current limit resistor,220Ω,,,,0603,"LED3_SIG, J3_PIN1",PROD,Current limit for LED3 (GPIO27).
 LED_OUTPUTS,R_LED4,1,LED current limit resistor,220Ω,,,,0603,"LED4_SIG, J4_PIN1",PROD,Current limit for LED4 (GPIO22).
+POWER_INDICATOR,R_PWR_LED,1,Sensor power rail indicator LED current limit resistor,330Ω,,,,0603,"SENS_3V3_SW, LED_PWR_ANODE",PROD,Current limit for sensor power rail indicator LED. Indicates when SENS_3V3_SW is ON.
+POWER_INDICATOR,LED_PWR,1,Sensor power rail indicator LED,Standard LED (3mm/5mm),,,,LED footprint,"LED_PWR_ANODE, GND",PROD,On-board LED indicating sensor power rail status. Not user-installed.

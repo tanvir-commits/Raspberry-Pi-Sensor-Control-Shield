@@ -582,8 +582,12 @@ All connectors use **JST-GH series** for reliable, professional connections. All
 | U_ADC | 1 | 4ch ADC (I2C) | ADS1015IDGST | C37593 | TI | ADS1015IDGST | VSSOP-10 | PROD | Place in analog island |
 | C_ADC | 1 | ADC supply decoupling | 0.1µF | - | - | - | 0402/0603 | PROD | Place at ADS1015 VDD pin |
 | R_ADDR | 1 | Address strap resistor | 0Ω (or DNP) | - | - | - | 0402/0603 | LAB | Optional: only if address change needed |
-| **Connectors** |
+| **Power Indicator** |
+| R_PWR_LED | 1 | Sensor power rail indicator LED current limit | 330Ω | - | - | - | 0603 | PROD | Current limit for sensor power rail indicator LED |
+| LED_PWR | 1 | Sensor power rail indicator LED | Standard LED | - | - | - | LED footprint | PROD | On-board LED indicating SENS_3V3_SW status |
+| **LED Outputs** |
 | J1-J4 | 4 | LED connectors (2-pin) | JST-GH | C22436166 | Hong Cheng | HC-PM254-8.5H-2x20PS | SMT | PROD | 2.54mm pitch, SMD receptacle |
+| R_LED1-R_LED4 | 4 | LED current limit resistors | 220Ω | - | - | - | 0603 | PROD | Current limit for LED outputs (GPIO16, 17, 27, 22) |
 | J5-J6 | 2 | Button connectors (2-pin) | JST-GH | C22436166 | Hong Cheng | HC-PM254-8.5H-2x20PS | SMT | PROD | 2.54mm pitch, SMD receptacle |
 | J7-J10 | 4 | ADC connectors (2-pin) | JST-GH | C22436166 | Hong Cheng | HC-PM254-8.5H-2x20PS | SMT | PROD | 2.54mm pitch, SMD receptacle |
 | J11 | 1 | GPIO bank (4-pin) | JST-GH | C22436166 | Hong Cheng | HC-PM254-8.5H-2x20PS | SMT | PROD | 2.54mm pitch, SMD receptacle |
